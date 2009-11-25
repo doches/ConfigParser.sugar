@@ -1,0 +1,23 @@
+/*
+	@placeholder configparser
+*/
+
+configparser section {
+	font-weight: bold;
+	spell-check: disabled;
+}
+
+configparser delimiter {
+	font-weight: normal;
+	color: #888;
+}
+
+configparser attribute {
+	font-weight: bold;
+	color: #91B8E2;
+}
+
+comment, comment>punctuation, tag.doctype, tag.doctype > *, tag.doctype > string.quoted {
+	color: #AAAAAA;
+	font-weight: normal;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="text.configparser">
+
+	<zones>
+		<include collection="configparser.comment" />
+		<include collection="configparser.header" />
+		<include collection="configparser.attribute" />
+	</zones>
+	
+	<library>
+	    <collection name="configparser.comment">
+	      <!-- # A comment -->
+	      <zone name="comment">
+	        <starts-with>
+	          <expression>#</expression>
+	          <capture number="0" name="metadata.comment.line.hash"/>
+	        </starts-with>
+	        <ends-with>
+	          <!-- Just having \Z causes weirdness -->
+	          <expression>\n\Z</expression>
+	        </ends-with>
+	      </zone>
+	    </collection>
+	    
+	    <collection name="configparser.header">
+	    	<!-- [A Header] -->
+	    	<zone name="section">
+		    	<expression>(\[)[^\[\]]+(\])</expression>
+	    	</zone>
+	    </collection>
+	    
+	    <collection name="configparser.attribute">
+	    	<!-- [A Header] -->
+	    	<zone name="attribute">
+		    	<expression>.+([:=])</expression>
+		    	<capture number="1" name="delimiter" />
+	    	</zone>
+	    </collection>
+	</library>
+</syntax>
