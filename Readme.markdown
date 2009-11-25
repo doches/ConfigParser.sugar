@@ -7,8 +7,8 @@ it understands both Windows .ini files and config files produced by Python's Con
 
 Clone this project somewhere, with the following:
 
-  git clone git://github.com/doches/configparser.sugar.git ./ConfigParser.sugar
+    git clone git://github.com/doches/configparser.sugar.git ./ConfigParser.sugar
 
 And then link it to your syntaxes directory:
 
-  ln -s "$(pwd)/ConfigParser.sugar" "/Users/$(whoami)/Library/Application Support/Espresso/Sugars/"
+    ln -s "$(pwd)/ConfigParser.sugar" "/Users/$(whoami)/Library/Application Support/Espresso/Sugars/"
