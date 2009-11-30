@@ -15,6 +15,7 @@
         <detectors>
         	<extension casesensitive="false">ini</extension>
         	<extension casesensitive="false">cfg</extension>
+        	<extension casesensitive="false">conf</extension>
         </detectors>
         
     </language>
@@ -24,7 +25,8 @@
     	<description>Understands configuration files following RFC 822 (see the Python ConfigParser module)</description>
     	<author>Trevor Fountain</author>
     	<identifier>net.texasexpat.Sugar.ConfigParser</identifier>
-    	<url>http://www.texasexpat.net/posts/configparser.html</url>
+    	<url>http://www.texasexpat.net/mt/mt-search.cgi?blog_id=1&tag=configparser&limit=20</url>
     	<download format="zip">http://www.texasexpat.net/media/configparser.sugar.zip</download>
+    	<download format="git">git://github.com/doches/ConfigParser.sugar.git</download>
     </meta>
 </settings>  
